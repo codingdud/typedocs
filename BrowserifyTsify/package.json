@@ -1,0 +1,19 @@
+{
+  "name": "browserifytsify",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build":"browserify src/main.ts -p [ tsify ] > dist/bundle.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "browserify": "^17.0.1",
+    "tsify": "^5.0.4",
+    "typescript": "^5.9.3"
+  }
+}
