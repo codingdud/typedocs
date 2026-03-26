@@ -11,14 +11,14 @@ function Required(target, propertyKey) {
     props.push(propertyKey);
     requiredProps.set(className, props);
 }
-function validate(obj) {
-    const props = requiredProps.get(obj.constructor.name) || [];
-    for (const prop of props) {
-        if (!obj[prop]) {
-            throw new Error(`${prop} is required`);
-        }
+/* function validate(obj: any) {
+  const props = requiredProps.get(obj.constructor.name) || [];
+  for (const prop of props) {
+    if (!obj[prop]) {
+      throw new Error(`${prop} is required`);
     }
-}
+  }
+} */
 class User {
 }
 __decorate([
@@ -26,4 +26,4 @@ __decorate([
 ], User.prototype, "name", void 0);
 const u = new User();
 // u.name = "John";
-validate(u); // ✅ No error - name is provided
+//validate(u); // ✅ No error - name is provided

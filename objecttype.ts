@@ -108,7 +108,7 @@ interface Vehicle{
     make:string;
 }
 interface Vehicle{
-    //make:number; type error
+    //make:number; //type error
     model:string;
 }
  interface Person{

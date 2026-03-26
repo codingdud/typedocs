@@ -22,4 +22,3 @@ let temp=new Calculator().add(2, 3);
 console.log(temp)
 // Calling add with [2, 3]
 // 5
- 

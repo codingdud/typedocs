@@ -1,6 +1,9 @@
 @Entity("users")
 class User {
-  name!: string;
+  name: string;
+  constructor(){
+    this.name="Animesh"
+  }
 }
 
 const u = new User();

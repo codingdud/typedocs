@@ -1,1 +1,1 @@
-console.log(myIdentity("Hello Generic"));
+"use strict";

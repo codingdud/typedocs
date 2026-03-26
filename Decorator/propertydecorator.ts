@@ -8,14 +8,14 @@ function Required(target: any, propertyKey: string) {
 }
 
 
-function validate(obj: any) {
+/* function validate(obj: any) {
   const props = requiredProps.get(obj.constructor.name) || [];
   for (const prop of props) {
     if (!obj[prop]) {
       throw new Error(`${prop} is required`);
     }
   }
-}
+} */
 
 
 class User {
@@ -26,4 +26,4 @@ class User {
 }
 const u = new User();
 // u.name = "John";
-validate(u); // ✅ No error - name is provided
+//validate(u); // ✅ No error - name is provided
