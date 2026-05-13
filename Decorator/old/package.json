@@ -1,0 +1,13 @@
+{
+  "name": "decorator-old",
+  "version": "1.0.0",
+  "description": "TypeScript decorator examples",
+  "main": "objcode/decorator.js",
+  "scripts": {
+    "build": "tsc decorator.ts --outDir objcode --target ESNext --useDefineForClassFields false --experimentalDecorators",
+    "start": "npm run build && node objcode/decorator.js"
+  },
+  "devDependencies": {
+    "typescript": "^5.9.3"
+  }
+}

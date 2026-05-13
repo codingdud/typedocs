@@ -1,3 +1,5 @@
+/* (target, propertyKey, parameterIndex)
+ */
 function Inject(target, methodName, paramIndex) {
     console.log(`Injecting parameter at index ${paramIndex} in ${methodName}`);
 }
